@@ -1,0 +1,191 @@
+// import
+@import 'fonts.scss';
+@import 'normalize.scss';
+@import '../vendor/_config.scss';
+@import '../vendor/_vars.scss';
+/*
+1. Обратить внимание, на странице restaurant-inner, хлебные крошки закинуты в секцию интро и доюавлен дополнительны класс
+2. В About у header есть дополнительный класс header-white
+3. В restaurant-inner, в dish-list добавлен класс wrap
+4. Модалки как обычно, чтобы она вызывалась, кнопке надо добавить класс modal-contact
+5. Подключение скриптов, cтилей, попапы все основное как всегда в index
+6. Если попап с фото не открывается, в атрибут href прописать путь к картинке, и добавить data-fancybox с названием группы картинок
+7. ВНИМАНИЕ: Ссылки на телефон и емейл сделаны отдельно для мобилки в header-mobile
+*/
+
+b {
+    font-family: 'Gilroy Bold';
+}
+
+a,
+span,
+p,
+input,
+button,
+select,
+option,
+textarea,
+label,
+blockquote {
+    color: #FFFFFF;
+    font-family: 'Gilroy Regular';
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+input {
+    border: none;
+    width: 100%;
+    font-family: 'Gilroy Regular';
+    padding: 22px 35px;
+    font-size: 19px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+textarea {
+    border: 1px solid #e1e1e1;
+    font-family: 'Gilroy Regular';
+    font-size: 19px;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 22px 35px;
+}
+
+label.error {
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.container {
+    padding: 0 20px;
+    width: 1210px;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(/assets/img/Main-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    &-wrapper {
+        padding-top: 33px;
+        padding-bottom: 42px;
+
+    }
+
+    &__logo {
+        margin-right: 60px;
+    }
+
+    &__nav {
+        ul {
+            display: flex;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+
+                a {
+                    color: #FFFFFF;
+                    font-family: 'Gilroy Regular';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.intro {
+        position: relative;
+    
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 1px;
+          background: rgba(255, 255, 255, 0.2);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+    &__title {
+        color: #FFF;
+        font-family: 'Gilroy Medium';
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        padding-bottom: 40px;
+
+        span {
+            font-size: 60px;
+            background: linear-gradient(96deg, #69E6EC 26.21%, #BC69FA 102.69%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__descr {
+        width: 397px;
+        color: #FFF;
+        font-family: 'Gilroy Regular';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        padding-bottom: 50px;
+    }
+
+    &__btn {
+
+
+        span {
+            color: #FFF;
+            font-family: 'Gilroy Regular';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            background: unset;
+        }
+    }
+
+    &__image {
+        width: 426px;
+        height: 518px;
+    }
+
+   
+}
+
+
+.banners {
+    &-item {}
+
+    &-panel {
+        &__prev {}
+    }
+}

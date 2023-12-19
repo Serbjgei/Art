@@ -1,0 +1,139 @@
+@import '_vars.scss';
+
+// FLEX
+.flex {
+    display: flex;
+}
+
+.f-jcsb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-jcsa {
+    display: flex;
+    justify-content: space-around;
+}
+
+.f-center {
+    display: flex;
+    align-items: center;
+}
+
+.f-jcsb-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-jcsa-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.f-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-dc {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-dc-jcsb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.f-dc-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f-dc-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+// IMAGE
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+}
+
+.img-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    pointer-events: none;
+}
+
+
+.pt-75 {
+    padding-top: 75px;
+}
+
+.pb-75 {
+    padding-bottom: 75px;
+}
+
+.pb-130 {
+    padding-bottom: 130px;
+}
+
+//TITLE
+.title {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+
+    span {
+        color: #FFFFFF;
+        font-size: 50px;
+        text-transform: uppercase;
+        font-family: Gilroy;
+        transition: $anim-default;
+        background: linear-gradient(96deg, #69E6EC 26.21%, #BC69FA 102.69%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+}
+
+.btn {
+    position: relative;
+    transition: $anim-default;
+    border-radius: 60px;
+    padding: 15px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.none {
+    display: none;
+}

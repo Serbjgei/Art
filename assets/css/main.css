@@ -1,0 +1,502 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../fonts/Gilroy-Light.eot");
+  src: local("Gilroy-Light"), url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: local("Gilroy-Medium"), url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy SemiBold";
+  src: url("../fonts/Gilroy-Semibold.eot");
+  src: local("Gilroy-SemiBold"), url("../fonts/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("../fonts/Gilroy-Bold.eot");
+  src: local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+body, html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 15px;
+  min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+textarea {
+  resize: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+img {
+  border-style: none;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: none;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number],
+input[type=number]:hover,
+input[type=number]:focus {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoratio {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+p, nav {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active {
+  text-decoration: none;
+  outline: none;
+  /*  -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;*/
+}
+
+input {
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-jcsa {
+  display: flex;
+  justify-content: space-around;
+}
+
+.f-center {
+  display: flex;
+  align-items: center;
+}
+
+.f-jcsb-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-jcsa-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.f-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-dc {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-dc-jcsb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.f-dc-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f-dc-center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+.img-contain {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
+
+.pt-75 {
+  padding-top: 75px;
+}
+
+.pb-75 {
+  padding-bottom: 75px;
+}
+
+.pb-130 {
+  padding-bottom: 130px;
+}
+
+.title {
+  color: #FFF;
+  font-family: Gilroy;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.title span {
+  color: #FFFFFF;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: Gilroy;
+  transition: all 0.3s ease;
+  background: linear-gradient(96deg, #69E6EC 26.21%, #BC69FA 102.69%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 60px;
+  padding: 15px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.none {
+  display: none;
+}
+
+/*
+1. Обратить внимание, на странице restaurant-inner, хлебные крошки закинуты в секцию интро и доюавлен дополнительны класс
+2. В About у header есть дополнительный класс header-white
+3. В restaurant-inner, в dish-list добавлен класс wrap
+4. Модалки как обычно, чтобы она вызывалась, кнопке надо добавить класс modal-contact
+5. Подключение скриптов, cтилей, попапы все основное как всегда в index
+6. Если попап с фото не открывается, в атрибут href прописать путь к картинке, и добавить data-fancybox с названием группы картинок
+7. ВНИМАНИЕ: Ссылки на телефон и емейл сделаны отдельно для мобилки в header-mobile
+*/
+b {
+  font-family: "Gilroy Bold";
+}
+
+a,
+span,
+p,
+input,
+button,
+select,
+option,
+textarea,
+label,
+blockquote {
+  color: #FFFFFF;
+  font-family: "Gilroy Regular";
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+input {
+  border: none;
+  width: 100%;
+  font-family: "Gilroy Regular";
+  padding: 22px 35px;
+  font-size: 19px;
+  color: #FFFFFF;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+textarea {
+  border: 1px solid #e1e1e1;
+  font-family: "Gilroy Regular";
+  font-size: 19px;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 22px 35px;
+}
+
+label.error {
+  font-size: 14px;
+  color: red;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.container {
+  padding: 0 20px;
+  width: 1210px;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(/assets/img/Main-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-wrapper {
+  padding-top: 33px;
+  padding-bottom: 42px;
+}
+.header__logo {
+  margin-right: 60px;
+}
+.header__nav ul {
+  display: flex;
+}
+.header__nav ul li:not(:last-child) {
+  margin-right: 20px;
+}
+.header__nav ul li a {
+  color: #FFFFFF;
+  font-family: "Gilroy Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.intro {
+  position: relative;
+}
+.intro::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.intro__title {
+  color: #FFF;
+  font-family: "Gilroy Medium";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  padding-bottom: 40px;
+}
+.intro__title span {
+  font-size: 60px;
+  background: linear-gradient(96deg, #69E6EC 26.21%, #BC69FA 102.69%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro__descr {
+  width: 397px;
+  color: #FFF;
+  font-family: "Gilroy Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  padding-bottom: 50px;
+}
+.intro__btn span {
+  color: #FFF;
+  font-family: "Gilroy Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  background: unset;
+}
+.intro__image {
+  width: 426px;
+  height: 518px;
+}/*# sourceMappingURL=main.css.map */
