@@ -70,7 +70,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header-burger no-hover">
+                <button class="header-burger none">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -82,14 +82,15 @@
         <section class="intro">
             <div class="container">
                 <div class="intro-wrapper pb-130 f-jcsb-center">
-                    <div class="intro__info">
-                        <h1 class="intro__title">
-                            <span>Окраска профиля ПВХ </span> <br>
+                    <div class="intro-info">
+                        <h1 class="intro-info__title title">
+                            <span>Окраска профиля ПВХ </span>
                             для окон в СПБ
                         </h1>
-                        <p class="intro__descr">Мы работаем напрямую с оконными заводами, строителями, проектировщиками
+                        <p class="intro-info__descr">Мы работаем напрямую с оконными заводами, строителями,
+                            проектировщиками
                             девелоперами.</p>
-                        <a href="" class="intro__btn btn"> <span>О производстве</span></a>
+                        <a href="" class="intro-info__btn btn"> <span>О производстве</span></a>
                     </div>
                     <div class="intro__image">
                         <img src="assets/img/intro/intro-img.png" alt="" class="img-contain">
@@ -97,161 +98,303 @@
                 </div>
             </div>
         </section>
-        <section class="partners">
+        <section class="partners pb-130">
             <div class="container">
-                <div class="partners-wrapper">
-                    
+                <div class="partners-wrapper ">
+                    <div></div>
+                    <h2>партнеры в разработке</h2>
                 </div>
             </div>
         </section>
-        <div class="die">
+        <section class="mission pb-130">
             <div class="container">
-                <div class="die-wrapper">
-                    <a href="" class="die-block f-center-center">
-                        <p class="die__text">
-                            КОНФЕРЕНЦИЯ: СДЕЛАНО В БУДУЩЕМ. СОВРЕМЕННОЕ ИСКУССТВО И МОДА В перспективе
+                <div class="mission-wrapper f-jcsb-center">
+                    <div class="mission-info">
+
+                        <h2 class="mission-info__title title">
+                            Наша <span>миссия</span>
+                        </h2>
+                        <p class="mission-info__descr">
+                            Мы приносим яркие эмоции нашим клиентам. Поднимаем рентабельность
+                            производства наших партнёров и добавляем их продукции дополнительную ценность.
                         </p>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <section class="subscribe">
-            <div class="container">
-                <div class="subscribe-wrapper pt-75">
-                    <h2 class="subscribe__title title">
-                        последние новости в нашей рассылке
-                    </h2>
-                    <form action="" class="subscribe-form" id="subscribe-form">
-                        <div class="subscribe-form-inner f-jcsb-center">
-                            <div class="subscribe-form-elem">
-                                <input type="text" class="subscribe-form-elem__input" name="email"
-                                    placeholder="Ваш Email">
-                            </div>
-                            <button class="subscribe-form__button">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="46px" height="8px">
-                                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
-                                        d="M45.988,4.005 L36.988,7.996 L36.988,5.000 L-0.000,5.000 L-0.000,2.999 L36.988,2.999 L36.988,0.013 L45.988,4.005 Z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <p class="subscribe-form__err"></p>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section class="gallery">
-            <div class="container">
-                <div class="gallery-wrapper pb-75">
-                    <h2 class="gallery__title title">
-                        <a href="">Галереи</a>
-                    </h2>
-                    <div class="gallery-slider swiper">
-                        <ul class="gallery-list swiper-wrapper">
-                            <li class="gallery-item swiper-slide">
-                                <a href="assets/img/gallery/1.png" class="gallery-item-link">
-                                    <div class="gallery-item__image">
-                                        <img src="assets/img/gallery/1.png" alt="" class="img-cover">
-                                    </div>
-                                    <div class="gallery-item-info">
-                                        <p class="gallery-item__name">
-                                            RUARTS GALLERY
-                                        </p>
-                                        <div class="gallery-item-city f-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 14 14" fill="none">
-                                                <path
-                                                    d="M7 0C4.10069 0 1.75 2.35069 1.75 5.25C1.75 6.39166 2.12428 7.43925 2.74641 8.29719C2.75756 8.31775 2.75931 8.34072 2.772 8.36041L6.272 13.6104C6.43431 13.8539 6.70775 14 7 14C7.29225 14 7.56569 13.8539 7.728 13.6104L11.228 8.36041C11.2409 8.34072 11.2424 8.31775 11.2536 8.29719C11.8757 7.43925 12.25 6.39166 12.25 5.25C12.25 2.35069 9.89931 0 7 0ZM7 7C6.03356 7 5.25 6.21644 5.25 5.25C5.25 4.28356 6.03356 3.5 7 3.5C7.96644 3.5 8.75 4.28356 8.75 5.25C8.75 6.21644 7.96644 7 7 7Z"
-                                                    fill="#BDBDBD" />
-                                            </svg>
-                                            <p>Москва</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="gallery-item swiper-slide">
-                                <a href="assets/img/gallery/2.png" class="gallery-item-link">
-                                    <div class="gallery-item__image">
-                                        <img src="assets/img/gallery/2.png" alt="" class="img-cover">
-                                    </div>
-                                    <div class="gallery-item-info">
-                                        <p class="gallery-item__name">
-                                            MARINA GISICH GALLERY
-                                        </p>
-                                        <div class="gallery-item-city f-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 14 14" fill="none">
-                                                <path
-                                                    d="M7 0C4.10069 0 1.75 2.35069 1.75 5.25C1.75 6.39166 2.12428 7.43925 2.74641 8.29719C2.75756 8.31775 2.75931 8.34072 2.772 8.36041L6.272 13.6104C6.43431 13.8539 6.70775 14 7 14C7.29225 14 7.56569 13.8539 7.728 13.6104L11.228 8.36041C11.2409 8.34072 11.2424 8.31775 11.2536 8.29719C11.8757 7.43925 12.25 6.39166 12.25 5.25C12.25 2.35069 9.89931 0 7 0ZM7 7C6.03356 7 5.25 6.21644 5.25 5.25C5.25 4.28356 6.03356 3.5 7 3.5C7.96644 3.5 8.75 4.28356 8.75 5.25C8.75 6.21644 7.96644 7 7 7Z"
-                                                    fill="#BDBDBD" />
-                                            </svg>
-                                            <p>санкт-петербург</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="gallery-item swiper-slide">
-                                <a href="assets/img/gallery/3.png" class="gallery-item-link">
-                                    <div class="gallery-item__image">
-                                        <img src="assets/img/gallery/3.png" alt="" class="img-cover">
-                                    </div>
-                                    <div class="gallery-item-info">
-                                        <p class="gallery-item__name">
-                                            MARINA GISICH GALLERY
-                                        </p>
-                                        <div class="gallery-item-city f-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 14 14" fill="none">
-                                                <path
-                                                    d="M7 0C4.10069 0 1.75 2.35069 1.75 5.25C1.75 6.39166 2.12428 7.43925 2.74641 8.29719C2.75756 8.31775 2.75931 8.34072 2.772 8.36041L6.272 13.6104C6.43431 13.8539 6.70775 14 7 14C7.29225 14 7.56569 13.8539 7.728 13.6104L11.228 8.36041C11.2409 8.34072 11.2424 8.31775 11.2536 8.29719C11.8757 7.43925 12.25 6.39166 12.25 5.25C12.25 2.35069 9.89931 0 7 0ZM7 7C6.03356 7 5.25 6.21644 5.25 5.25C5.25 4.28356 6.03356 3.5 7 3.5C7.96644 3.5 8.75 4.28356 8.75 5.25C8.75 6.21644 7.96644 7 7 7Z"
-                                                    fill="#BDBDBD" />
-                                            </svg>
-                                            <p>санкт-петербург</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="gallery-item swiper-slide">
-                                <a href="assets/img/gallery/4.png" class="gallery-item-link">
-                                    <div class="gallery-item__image">
-                                        <img src="assets/img/gallery/4.png" alt="" class="img-cover">
-                                    </div>
-                                    <div class="gallery-item-info">
-                                        <p class="gallery-item__name">
-                                            MARINA GISICH GALLERY
-                                        </p>
-                                        <div class="gallery-item-city f-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 14 14" fill="none">
-                                                <path
-                                                    d="M7 0C4.10069 0 1.75 2.35069 1.75 5.25C1.75 6.39166 2.12428 7.43925 2.74641 8.29719C2.75756 8.31775 2.75931 8.34072 2.772 8.36041L6.272 13.6104C6.43431 13.8539 6.70775 14 7 14C7.29225 14 7.56569 13.8539 7.728 13.6104L11.228 8.36041C11.2409 8.34072 11.2424 8.31775 11.2536 8.29719C11.8757 7.43925 12.25 6.39166 12.25 5.25C12.25 2.35069 9.89931 0 7 0ZM7 7C6.03356 7 5.25 6.21644 5.25 5.25C5.25 4.28356 6.03356 3.5 7 3.5C7.96644 3.5 8.75 4.28356 8.75 5.25C8.75 6.21644 7.96644 7 7 7Z"
-                                                    fill="#BDBDBD" />
-                                            </svg>
-                                            <p>санкт-петербург</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="gallery-panel f-center-center">
-                            <button class="gallery-panel__prev">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="46px" height="8px">
-                                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
-                                        d="M46.000,4.999 L9.012,4.999 L9.012,7.996 L0.012,4.004 L9.012,0.013 L9.012,2.999 L46.000,2.999 L46.000,4.999 Z" />
-                                </svg>
-                            </button>
-                            <button class="gallery-panel__next">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="46px" height="8px">
-                                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
-                                        d="M45.988,4.004 L36.988,7.996 L36.988,4.999 L-0.000,4.999 L-0.000,2.999 L36.988,2.999 L36.988,0.013 L45.988,4.004 Z" />
-                                </svg>
-                            </button>
+                    </div>
+                    <div class="mission-video ">
+                        <video src=""></video>
+                        <div class="mission-video__poster">
+                            <img class="img-cover" src="assets/img/intro/video.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
+                                fill="none">
+                                <circle cx="35" cy="35" r="35" fill="white" />
+                                <path d="M47 35L29 45.3923L29 24.6077L47 35Z" fill="url(#paint0_linear_3566_1978)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_3566_1978" x1="62.3572" y1="31.4933" x2="60.3189"
+                                        y2="51.512" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#69E6EC" />
+                                        <stop offset="1" stop-color="#BC69FA" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="how pb-130">
+            <!-- НЕ ПОНЯЛ КАК СВАЙПЕР УСТАНОВИТЬ В LEFT 0  и чтобы не прятался за границы
+             -->
+            <div class="container">
+                <div class="how-wrapper ">
+                    <h2 class="how__title title pb-60">
+                        Что мы для <span>этого делаем?</span>
+                    </h2>
+                    <div class="how-slider mySwiper swiper">
+                        <ul class="how-slider-wrapper swiper-wrapper f-jcsb">
+                            <li class="how-slider-item  swiper-slide f-dc-jcsb ">
+                                <svg class="how-slider-item__num" xmlns="http://www.w3.org/2000/svg" width="46"
+                                    height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_b_3566_1987)">
+                                        <path d="M0 20C0 8.95431 8.95431 0 20 0H46V26C46 37.0457 37.0457 46 26 46H0V20Z"
+                                            fill="url(#paint0_linear_3566_1987)" fill-opacity="0.1" />
+                                        <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle"
+                                            fill="#69E6EC" font-family="Gilroy Medium" font-size="20px">01</text>
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_b_3566_1987" x="-10" y="-10" width="66" height="66"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+                                            <feComposite in2="SourceAlpha" operator="in"
+                                                result="effect1_backgroundBlur_3566_1987" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_backgroundBlur_3566_1987" result="shape" />
+                                        </filter>
+                                        <linearGradient id="paint0_linear_3566_1987" x1="16.2788" y1="-29.4345"
+                                            x2="54.6479" y2="-25.528" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#69E6EC" />
+                                            <stop offset="1" stop-color="#BC69FA" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                                <img class="how-slider-item__image " src="assets/img/icon/how1.svg" alt="">
+
+
+                                <p class="how-slider-item__descr">
+                                    Выбираем для покраски только лучшие безопасные износостойкие эмали
+                                </p>
+                            </li>
+                            <li class="how-slider-item swiper-slide f-dc-jcsb">
+                                <svg class="how-slider-item__num" xmlns="http://www.w3.org/2000/svg" width="46"
+                                    height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_b_3566_1987)">
+                                        <path d="M0 20C0 8.95431 8.95431 0 20 0H46V26C46 37.0457 37.0457 46 26 46H0V20Z"
+                                            fill="url(#paint0_linear_3566_1987)" fill-opacity="0.1" />
+                                        <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle"
+                                            fill="#69E6EC" font-family="Gilroy Medium" font-size="20px">02</text>
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_b_3566_1987" x="-10" y="-10" width="66" height="66"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+                                            <feComposite in2="SourceAlpha" operator="in"
+                                                result="effect1_backgroundBlur_3566_1987" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_backgroundBlur_3566_1987" result="shape" />
+                                        </filter>
+                                        <linearGradient id="paint0_linear_3566_1987" x1="16.2788" y1="-29.4345"
+                                            x2="54.6479" y2="-25.528" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#69E6EC" />
+                                            <stop offset="1" stop-color="#BC69FA" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                                <img class="how-slider-item__image " src="assets/img/icon/how2.svg" alt="">
+
+                                <p class="how-slider-item__descr">
+                                    Обеспечиваем первоклассную покраску по собственных технологиям
+                                </p>
+                            </li>
+                            <li class="how-slider-item swiper-slide f-dc-jcsb">
+                                <svg class="how-slider-item__num" xmlns="http://www.w3.org/2000/svg" width="46"
+                                    height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_b_3566_1987)">
+                                        <path d="M0 20C0 8.95431 8.95431 0 20 0H46V26C46 37.0457 37.0457 46 26 46H0V20Z"
+                                            fill="url(#paint0_linear_3566_1987)" fill-opacity="0.1" />
+                                        <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle"
+                                            fill="#69E6EC" font-family="Gilroy Medium" font-size="20px">03</text>
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_b_3566_1987" x="-10" y="-10" width="66" height="66"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+                                            <feComposite in2="SourceAlpha" operator="in"
+                                                result="effect1_backgroundBlur_3566_1987" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_backgroundBlur_3566_1987" result="shape" />
+                                        </filter>
+                                        <linearGradient id="paint0_linear_3566_1987" x1="16.2788" y1="-29.4345"
+                                            x2="54.6479" y2="-25.528" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#69E6EC" />
+                                            <stop offset="1" stop-color="#BC69FA" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                                <img class="how-slider-item__image " src="assets/img/icon/how3.svg" alt="">
+                                <p class="how-slider-item__descr">
+                                    Окрашиваем профиль по любому каталогу. Сейчас у нас 46 000 цветов
+                                </p>
+                            </li>
+                            <li class="how-slider-item swiper-slide f-dc-jcsb">
+                                <svg class="how-slider-item__num" xmlns="http://www.w3.org/2000/svg" width="46"
+                                    height="46" viewBox="0 0 46 46" fill="none">
+                                    <g filter="url(#filter0_b_3566_1987)">
+                                        <path d="M0 20C0 8.95431 8.95431 0 20 0H46V26C46 37.0457 37.0457 46 26 46H0V20Z"
+                                            fill="url(#paint0_linear_3566_1987)" fill-opacity="0.1" />
+                                        <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle"
+                                            fill="#69E6EC" font-family="Gilroy Medium" font-size="20px">04</text>
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_b_3566_1987" x="-10" y="-10" width="66" height="66"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+                                            <feComposite in2="SourceAlpha" operator="in"
+                                                result="effect1_backgroundBlur_3566_1987" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect1_backgroundBlur_3566_1987" result="shape" />
+                                        </filter>
+                                        <linearGradient id="paint0_linear_3566_1987" x1="16.2788" y1="-29.4345"
+                                            x2="54.6479" y2="-25.528" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#69E6EC" />
+                                            <stop offset="1" stop-color="#BC69FA" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <img class="how-slider-item__image " src="assets/img/icon/how1.svg" alt="">
+
+                                <p class="how-slider-item__descr">
+                                    Делаем предварительный выкрас, чтобы вы убедились в том, что цвет будет
+                                    соответствовать каталогу.
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="objects pb-130">
+            <div class="container">
+                <div class="objects-wrapper ">
+                    <h2 class="objects__title title">
+                        <span>Обьекты</span> клиентов
+                    </h2>
+                    <div class="objects-block pb-60">
+                        <div class="objects-card flex" id="gallery1">
+
+                            <div class=" objects-card-img">
+                                <img class="objects-card-img__main-photo img-cover" src="assets/img/intro/object1.png" alt="Big Photo">
+                            </div>
+                            <div class="objects-card-info f-dc-jcsb">
+                                <h3>Длинное название объекта 1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                <div class="objects-card-info-img flex">
+                                    <img class="objects-card-info-img__small-photo active" src="assets/img/intro/object1.png" alt="Small Photo 1">
+                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object2.png" alt="Small Photo 2">
+                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object3.png" alt="Small Photo 3">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="objects-card flex" id="gallery2">
+
+                            <div class=" objects-card-img">
+                                <img class="objects-card-img__main-photo img-cover" src="assets/img/intro/object3.png" alt="Big Photo">
+                            </div>
+                            <div class="objects-card-info f-dc-jcsb">
+                                <h3>Длинное название объекта 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                <div class="objects-card-info-img flex">
+                                    <img class="objects-card-info-img__small-photo active" src="assets/img/intro/object3.png" alt="Small Photo 1">
+                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object2.png" alt="Small Photo 2">
+                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object1.png" alt="Small Photo 3">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="objects-card flex" id="gallery3">
+
+                            <div class=" objects-card-img">
+                                <img class="objects-card-img__main-photo img-cover" src="assets/img/intro/object2.png" alt="Big Photo">
+                            </div>
+                            <div class="objects-card-info f-dc-jcsb">
+                                <h3>Длинное название объекта 3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                <div class="objects-card-info-img flex">
+                                    <img class="objects-card-info-img__small-photo " src="assets/img/intro/object2.png" alt="Small Photo 1">
+                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object3.png" alt="Small Photo 2">
+                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object1.png" alt="Small Photo 3">
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <a href="" class="objects__btn btn"> <span>Смотреть все проекты</span></a>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="news-wrapper">
+                    <h2 class="news-wrapper__title">
+                        Новости
+                    </h2>
+                    <div class="news-block f-jcsb">
+                        <div class="news-card f-dc">
+                            <img class="news-card__img img-contain" src="assets/img/intro/news1.png" alt="">
+                            <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+                            <p class="news-card__data">11.02.2023</p>
+                        </div>
+
+                        <div class="news-card f-dc">
+                            <img class="news-card__img img-contain" src="assets/img/intro/news2.png" alt="">
+                            <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+                            <p class="news-card__data">11.02.2023</p>
+                        </div>
+
+                        <div class="news-card f-dc">
+                            <img class="news-card__img img-contain" src="assets/img/intro/news3.png" alt="">
+                            <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+                            <p class="news-card__data">11.02.2023</p>
+                        </div>
+
+                        <div class="news-card f-dc">
+                            <img class="news-card__img img-contain" src="assets/img/intro/news4.png" alt="">
+                            <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+                            <p class="news-card__data">11.02.2023</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <footer>
