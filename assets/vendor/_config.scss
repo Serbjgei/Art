@@ -88,8 +88,8 @@
     padding-top: 75px;
 }
 
-.pb-75 {
-    padding-bottom: 75px;
+.pb-60 {
+    padding-bottom: 60px;
 }
 
 .pb-130 {
@@ -99,20 +99,19 @@
 //TITLE
 .title {
     color: #FFF;
-    font-family: Gilroy;
+    font-family: "Gilroy Medium";
     font-size: 50px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
-    text-transform: uppercase;
+   
     text-align: center;
     margin-bottom: 70px;
 
     span {
         color: #FFFFFF;
         font-size: 50px;
-        text-transform: uppercase;
-        font-family: Gilroy;
+        font-family: "Gilroy Medium";
         transition: $anim-default;
         background: linear-gradient(96deg, #69E6EC 26.21%, #BC69FA 102.69%);
         background-clip: text;
@@ -128,6 +127,8 @@
     border-radius: 60px;
     padding: 15px 30px;
     border: 1px solid rgba(255, 255, 255, 0.20);
+    
+    
 }
 
 .hidden {

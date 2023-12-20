@@ -1,48 +1,51 @@
-
-
-const swiperIntro = new Swiper(".banners-slider", {
-    effect: 'fade',
-    loop: true,
-    allowTouchMove: true,
-    fadeEffect: {
-        crossFade: true,
-    },
-    autoplay: {
-        delay: 7000,
-    },
-    navigation: {
-        nextEl: ".banners-panel__next",
-        prevEl: ".banners-panel__prev",
-    },
-}); 
-
-const swiperRecall = new Swiper(".gallery-slider", {
-    loop: true,
-    watchSlidesProgress: true,
+var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: ".gallery-panel__next",
-        prevEl: ".gallery-panel__prev",
-    },
-    breakpoints: {
-        1210: {
-            spaceBetween: 30,
-            slidesPerView: 4,
-        },
-        768: {
-            spaceBetween: 20,
-            slidesPerView: 3,
-        },
-        576: {
-            slidesPerView: 2,
-        },
-        320: {
-            spaceBetween: 0,
-            slidesPerView: 1,
-        },
-    },
-});
+    centeredSlides: true,
+    initialSlide: 2,
+  });
+
+  class PhotoGallery {
+    constructor(galleryId, bigPhotoId, smallPhotosClass) {
+        this.galleryId = galleryId;
+        this.bigPhoto = document.getElementById(galleryId).querySelector(`.${bigPhotoId}`);
+        this.smallPhotos = document.getElementById(galleryId).getElementsByClassName(smallPhotosClass);
+
+        this.addClickHandlers();
+        this.setInitialActive();
+    }
+
+    addClickHandlers() {
+        Array.from(this.smallPhotos).forEach(smallPhoto => {
+            smallPhoto.addEventListener('click', () => {
+                // Удаляем класс active у всех маленьких фотографий
+                Array.from(this.smallPhotos).forEach(photo => {
+                    photo.classList.remove('active');
+                });
+
+                // Добавляем класс active только к выбранной маленькой фотографии
+                smallPhoto.classList.add('active');
+
+                const smallPhotoSrc = smallPhoto.src;
+                this.bigPhoto.src = smallPhotoSrc;
+            });
+        });
+    }
+
+    setInitialActive() {
+        // Находим маленькую фотографию, которая соответствует текущей большой
+        const activeSmallPhoto = Array.from(this.smallPhotos).find(photo => photo.src === this.bigPhoto.src);
+
+        if (activeSmallPhoto) {
+            // Добавляем класс active, если нашли соответствующую маленькую фотографию
+            activeSmallPhoto.classList.add('active');
+        }
+    }
+}
+
+const gallery1 = new PhotoGallery('gallery1', 'objects-card-img__main-photo', 'objects-card-info-img__small-photo');
+const gallery2 = new PhotoGallery('gallery2', 'objects-card-img__main-photo', 'objects-card-info-img__small-photo');
+const gallery3 = new PhotoGallery('gallery3', 'objects-card-img__main-photo', 'objects-card-info-img__small-photo');
+
 
 // jQuery function
 $(document).ready(function() {
