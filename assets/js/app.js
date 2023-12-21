@@ -1,51 +1,72 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
-    centeredSlides: true,
-    initialSlide: 2,
+    slidesPerView: "auto",
+    freeMode: true,
+    grabCursor: true,
   });
 
   class PhotoGallery {
-    constructor(galleryId, bigPhotoId, smallPhotosClass) {
-        this.galleryId = galleryId;
-        this.bigPhoto = document.getElementById(galleryId).querySelector(`.${bigPhotoId}`);
-        this.smallPhotos = document.getElementById(galleryId).getElementsByClassName(smallPhotosClass);
+    constructor(container, bigPhotoClass, smallPhotosClass) {
+        this.container = container;
+        this.bigPhoto = container.querySelector(`.${bigPhotoClass}`);
+        this.smallPhotos = container.querySelectorAll(`.${smallPhotosClass}`);
 
         this.addClickHandlers();
         this.setInitialActive();
     }
 
     addClickHandlers() {
-        Array.from(this.smallPhotos).forEach(smallPhoto => {
+        this.smallPhotos.forEach(smallPhoto => {
             smallPhoto.addEventListener('click', () => {
-                // Удаляем класс active у всех маленьких фотографий
-                Array.from(this.smallPhotos).forEach(photo => {
+                this.smallPhotos.forEach(photo => {
                     photo.classList.remove('active');
                 });
 
-                // Добавляем класс active только к выбранной маленькой фотографии
                 smallPhoto.classList.add('active');
 
-                const smallPhotoSrc = smallPhoto.src;
+                const smallPhotoSrc = smallPhoto.querySelector('img').src;
                 this.bigPhoto.src = smallPhotoSrc;
             });
         });
     }
 
     setInitialActive() {
-        // Находим маленькую фотографию, которая соответствует текущей большой
-        const activeSmallPhoto = Array.from(this.smallPhotos).find(photo => photo.src === this.bigPhoto.src);
-
-        if (activeSmallPhoto) {
-            // Добавляем класс active, если нашли соответствующую маленькую фотографию
-            activeSmallPhoto.classList.add('active');
-        }
+        // Логика для установки начального активного состояния, если требуется
     }
 }
 
-const gallery1 = new PhotoGallery('gallery1', 'objects-card-img__main-photo', 'objects-card-info-img__small-photo');
-const gallery2 = new PhotoGallery('gallery2', 'objects-card-img__main-photo', 'objects-card-info-img__small-photo');
-const gallery3 = new PhotoGallery('gallery3', 'objects-card-img__main-photo', 'objects-card-info-img__small-photo');
+// Найти все контейнеры галерей
+const galleryContainers = document.querySelectorAll('.objects-card');
 
+// Создать объекты PhotoGallery для каждой галереи
+galleryContainers.forEach(container => {
+    const gallery = new PhotoGallery(container, 'big-photo', 'objects-card-info-img__small-photo');
+});
+
+
+
+// map
+ymaps.ready(function () {
+    let center = [43.120475152394356, 131.89532078836044]
+  
+    let map = new ymaps.Map("map", {
+      center: center, // Координаты центра карты
+      zoom: 17, // Масштаб карты
+       controls: [] // Виджеты карты
+    });
+  
+    map.behaviors.disable('scrollZoom');
+  
+    let placemark = new ymaps.Placemark(center, {}, {
+      iconLayout: "default#image",
+      iconImageHref: "../img/map-marker.svg", // Путь к файлу логотипа
+      iconImageSize: [60, 60], // Размеры иконки
+      iconImageOffset: [-30, -60] // Смещение иконки
+    });
+  
+    map.geoObjects.add(placemark); // Добавляем метку на карту
+  });
+
+ 
 
 // jQuery function
 $(document).ready(function() {

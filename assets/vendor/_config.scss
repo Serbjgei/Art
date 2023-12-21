@@ -102,11 +102,9 @@
     font-family: "Gilroy Medium";
     font-size: 50px;
     font-style: normal;
-    font-weight: 500;
     line-height: 120%;
-   
     text-align: center;
-    margin-bottom: 70px;
+
 
     span {
         color: #FFFFFF;
@@ -127,8 +125,25 @@
     border-radius: 60px;
     padding: 15px 30px;
     border: 1px solid rgba(255, 255, 255, 0.20);
-    
-    
+
+
+}
+
+.btn-a {
+    position: relative;
+    transition: $anim-default;
+    border-radius: 60px;
+    padding: 15px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    text-align: center;
+    display: block;
+    width: 212px;
+    margin: 0 auto;
+
+    span {
+        font-size: 14px;
+        line-height: 100%;
+    }
 }
 
 .hidden {

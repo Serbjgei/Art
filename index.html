@@ -120,7 +120,10 @@
                         </p>
                     </div>
                     <div class="mission-video ">
-                        <video src=""></video>
+                        <video id="mission-video-autoplay" controls="controls" preload="">
+                            <source src="assets/img/organization/film.mp4"
+                                type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+                        </video>
                         <div class="mission-video__poster">
                             <img class="img-cover" src="assets/img/intro/video.png" alt="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
@@ -148,7 +151,7 @@
                     <h2 class="how__title title pb-60">
                         Что мы для <span>этого делаем?</span>
                     </h2>
-                    <div class="how-slider mySwiper swiper">
+                    <div class="how-slider mySwiper ">
                         <ul class="how-slider-wrapper swiper-wrapper f-jcsb">
                             <li class="how-slider-item  swiper-slide f-dc-jcsb ">
                                 <svg class="how-slider-item__num" xmlns="http://www.w3.org/2000/svg" width="46"
@@ -291,106 +294,336 @@
         <section class="objects pb-130">
             <div class="container">
                 <div class="objects-wrapper ">
-                    <h2 class="objects__title title">
+                    <h2 class="objects__title title pb-60">
                         <span>Обьекты</span> клиентов
                     </h2>
-                    <div class="objects-block pb-60">
-                        <div class="objects-card flex" id="gallery1">
+                    <ul class="objects-block pb-60">
+
+
+                        <li class="objects-card flex ">
 
                             <div class=" objects-card-img">
-                                <img class="objects-card-img__main-photo img-cover" src="assets/img/intro/object1.png" alt="Big Photo">
+                                <img class="big-photo img-cover" src="assets/img/intro/object1.png" alt="Big Photo">
                             </div>
                             <div class="objects-card-info f-dc-jcsb">
                                 <h3>Длинное название объекта 1</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                                <div class="objects-card-info-img flex">
-                                    <img class="objects-card-info-img__small-photo active" src="assets/img/intro/object1.png" alt="Small Photo 1">
-                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object2.png" alt="Small Photo 2">
-                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object3.png" alt="Small Photo 3">
-                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                    id est laborum."</p>
+                                <ul class="objects-card-info-img flex wrap ">
+                                    <li class="objects-card-info-img__small-photo active"> <img class="img-cover"
+                                            src="assets/img/intro/object1.png" alt="Small Photo 1"></li>
+                                    <li class="objects-card-info-img__small-photo"><img class="img-cover"
+                                            src="assets/img/intro/object2.png" alt="Small Photo 2"></li>
+                                    <li class="objects-card-info-img__small-photo "><img class="img-cover"
+                                            src="assets/img/intro/object3.png" alt="Small Photo 3"></li>
+
+
+                                </ul>
                             </div>
 
-                        </div>
 
-                        <div class="objects-card flex" id="gallery2">
+                        </li>
+
+                        <li class="objects-card flex ">
 
                             <div class=" objects-card-img">
-                                <img class="objects-card-img__main-photo img-cover" src="assets/img/intro/object3.png" alt="Big Photo">
+                                <img class="big-photo img-cover" src="assets/img/intro/object3.png" alt="Big Photo">
                             </div>
                             <div class="objects-card-info f-dc-jcsb">
                                 <h3>Длинное название объекта 2</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                                <div class="objects-card-info-img flex">
-                                    <img class="objects-card-info-img__small-photo active" src="assets/img/intro/object3.png" alt="Small Photo 1">
-                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object2.png" alt="Small Photo 2">
-                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object1.png" alt="Small Photo 3">
-                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                    id est laborum."</p>
+                                <ul class="objects-card-info-img flex wrap ">
+                                    <li class="objects-card-info-img__small-photo active"> <img class="img-cover"
+                                            src="assets/img/intro/object3.png" alt="Small Photo 1"></li>
+                                    <li class="objects-card-info-img__small-photo"><img class="img-cover"
+                                            src="assets/img/intro/object2.png" alt="Small Photo 2"></li>
+                                    <li class="objects-card-info-img__small-photo "><img class="img-cover"
+                                            src="assets/img/intro/object1.png" alt="Small Photo 3"></li>
+
+                                </ul>
                             </div>
 
-                        </div>
-                        <div class="objects-card flex" id="gallery3">
+                        </li>
+                        <li class="objects-card flex ">
 
                             <div class=" objects-card-img">
-                                <img class="objects-card-img__main-photo img-cover" src="assets/img/intro/object2.png" alt="Big Photo">
+                                <img class="big-photo img-cover" src="assets/img/intro/object2.png" alt="Big Photo">
                             </div>
                             <div class="objects-card-info f-dc-jcsb">
                                 <h3>Длинное название объекта 3</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                                <div class="objects-card-info-img flex">
-                                    <img class="objects-card-info-img__small-photo " src="assets/img/intro/object2.png" alt="Small Photo 1">
-                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object3.png" alt="Small Photo 2">
-                                    <img class="objects-card-info-img__small-photo" src="assets/img/intro/object1.png" alt="Small Photo 3">
-                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                    id est laborum."</p>
+                                <ul class="objects-card-info-img flex wrap ">
+                                    <li class="objects-card-info-img__small-photo active"> <img class="img-cover"
+                                            src="assets/img/intro/object2.png" alt="Small Photo 1"></li>
+                                    <li class="objects-card-info-img__small-photo"><img class="img-cover"
+                                            src="assets/img/intro/object3.png" alt="Small Photo 2"></li>
+                                    <li class="objects-card-info-img__small-photo "><img class="img-cover"
+                                            src="assets/img/intro/object1.png" alt="Small Photo 3"></li>
+
+                                </ul>
                             </div>
 
-                        </div>
-                        
-                    </div>
-                    <a href="" class="objects__btn btn"> <span>Смотреть все проекты</span></a>
+                        </li>
+
+                    </ul>
+                    <a href="" class="objects__btn btn-a"> <span>Смотреть все проекты</span></a>
                 </div>
             </div>
         </section>
-        <section class="news">
+        <section class="news pb-130">
             <div class="container">
                 <div class="news-wrapper">
-                    <h2 class="news-wrapper__title">
+                    <h2 class="news-wrapper__title title pb-60">
                         Новости
                     </h2>
-                    <div class="news-block f-jcsb">
-                        <div class="news-card f-dc">
-                            <img class="news-card__img img-contain" src="assets/img/intro/news1.png" alt="">
-                            <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
-                            <p class="news-card__data">11.02.2023</p>
+
+                    <!-- как нормальный хиден сделать -->
+                    <ul class="news-block flex wrap">
+                        <li class="news-card f-dc">
+                            <a href="" class="news-card__link">
+                                <div class="news-card__img">
+                                    <img class=" img-cover" src="assets/img/intro/news1.png" alt="">
+                                </div>
+                                <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do
+                                    eiusmod tempor incididunt ...</p>
+                                <p class="news-card__data">11.02.2023</p>
+                            </a>
+                        </li>
+
+                        <li class="news-card f-dc">
+                            <a href="" class="news-card-link">
+                                <div class="news-card__img">
+                                    <img class=" img-cover" src="assets/img/intro/news2.png" alt="">
+                                </div>
+                                <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do
+                                    eiusmod tempor incididunt ...</p>
+                                <span class="news-card__data">11.02.2023</span>
+                            </a>
+                        </li>
+
+                        <li class="news-card f-dc">
+                            <a href="" class="news-card-link">
+                                <div class="news-card__img">
+                                    <img class=" img-cover" src="assets/img/intro/news3.png" alt="">
+                                </div>
+                                <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do
+                                    eiusmod tempor incididunt ...</p>
+                                <span class="news-card__data">11.02.2023</span>
+                            </a>
+                        </li>
+
+                        <li class="news-card f-dc">
+                            <a href="" class="news-card-link">
+                                <div class="news-card__img">
+                                    <img class=" img-cover" src="assets/img/intro/news4.png" alt="">
+                                </div>
+                                <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do
+                                    eiusmod tempor incididunt ...</p>
+                                <span class="news-card__data">11.02.2023</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                    <a href="" class="news__btn btn-a"> <span>Смотреть все новости</span></a>
+                </div>
+            </div>
+
+        </section>
+        <section class="review pb-130">
+            <div class="container">
+                <div class="review-wraooer f-dc wrap">
+                    <h2 class="review__title title pb-60">
+                        Отзывы
+                    </h2>
+                    <ul class="review-block flex wrap">
+                        <li class="review-card flex">
+                            <div class="review-img">
+                                <div class="review-img__bg">
+                                    <!-- для опасити 1 при скачивании 0.2 -->
+                                    <svg class="img-cover" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                        viewBox="0 0 40 40" fill="none">
+                                        <g opacity="1">
+                                            <path
+                                                d="M16.1757 7.98833C15.6874 7.5 14.9024 7.5 13.3307 7.5H12.9141V5C12.9141 4.66848 12.7824 4.35054 12.5479 4.11612C12.3135 3.8817 11.9956 3.75 11.6641 3.75C11.3325 3.75 11.0146 3.8817 10.7802 4.11612C10.5458 4.35054 10.4141 4.66848 10.4141 5V7.5H9.9974C8.42573 7.5 7.64073 7.5 7.1524 7.98833C6.66406 8.47667 6.66406 9.26167 6.66406 10.8333V11.1733C7.00073 11.085 7.34073 11.0233 7.67406 10.9783C8.7474 10.8333 10.0724 10.8333 11.5141 10.8333H11.8124C13.2541 10.8333 14.5774 10.8333 15.6524 10.9783C15.9857 11.0217 16.3257 11.085 16.6624 11.1733V10.8333C16.6624 9.26167 16.6641 8.47667 16.1757 7.98833Z"
+                                                fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.33594 35.4167C3.00442 35.4167 2.68647 35.5484 2.45205 35.7828C2.21763 36.0172 2.08594 36.3351 2.08594 36.6667C2.08594 36.9982 2.21763 37.3161 2.45205 37.5506C2.68647 37.785 3.00442 37.9167 3.33594 37.9167H36.6693C37.0008 37.9167 37.3187 37.785 37.5532 37.5506C37.7876 37.3161 37.9193 36.9982 37.9193 36.6667C37.9193 36.3351 37.7876 36.0172 37.5532 35.7828C37.3187 35.5484 37.0008 35.4167 36.6693 35.4167H35.0026V12.9533C35.0026 10.72 35.0026 9.60167 34.4093 8.745C33.8159 7.88834 32.7693 7.495 30.6759 6.71167C26.5843 5.17667 24.5393 4.41 23.1043 5.40334C21.6693 6.4 21.6693 8.58334 21.6693 12.9533V17.5H21.8193C23.2609 17.5 24.5843 17.5 25.6593 17.645C26.8443 17.8033 28.0976 18.1783 29.1259 19.2083C30.1576 20.2383 30.5326 21.4917 30.6926 22.675C30.8359 23.7517 30.8359 25.075 30.8359 26.5183V35.4167H28.3359V26.6667C28.3359 23.5233 28.3359 21.9533 27.3593 20.9767C26.3826 20 24.8126 20 21.6693 20H18.3359C15.1926 20 13.6226 20 12.6459 20.9767C11.6693 21.9533 11.6693 23.5233 11.6693 26.6667V35.4167H9.16927V26.5167C9.16927 25.075 9.16927 23.7517 9.31427 22.6767C9.4726 21.4917 9.8476 20.2383 10.8776 19.21C11.9076 18.1783 13.1609 17.8033 14.3443 17.6433C15.4209 17.5 16.7443 17.5 18.1876 17.5H18.3076C18.2409 15.94 18.0326 14.9833 17.3593 14.31C16.3826 13.3333 14.8126 13.3333 11.6693 13.3333C8.52594 13.3333 6.95594 13.3333 5.97927 14.31C5.0026 15.2867 5.0026 16.8567 5.0026 20V35.4167H3.33594ZM15.4193 25C15.4193 24.6685 15.551 24.3505 15.7854 24.1161C16.0198 23.8817 16.3377 23.75 16.6693 23.75H23.3359C23.6675 23.75 23.9854 23.8817 24.2198 24.1161C24.4542 24.3505 24.5859 24.6685 24.5859 25C24.5859 25.3315 24.4542 25.6495 24.2198 25.8839C23.9854 26.1183 23.6675 26.25 23.3359 26.25H16.6693C16.3377 26.25 16.0198 26.1183 15.7854 25.8839C15.551 25.6495 15.4193 25.3315 15.4193 25ZM15.4193 30C15.4193 29.6685 15.551 29.3505 15.7854 29.1161C16.0198 28.8817 16.3377 28.75 16.6693 28.75H23.3359C23.6675 28.75 23.9854 28.8817 24.2198 29.1161C24.4542 29.3505 24.5859 29.6685 24.5859 30C24.5859 30.3315 24.4542 30.6495 24.2198 30.8839C23.9854 31.1183 23.6675 31.25 23.3359 31.25H16.6693C16.3377 31.25 16.0198 31.1183 15.7854 30.8839C15.551 30.6495 15.4193 30.3315 15.4193 30Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="review-info">
+                                <h2 class="review-info__title">Название компании</h2>
+                                <p class="review-info__descr"> Большое спасибо компании
+                                    "Белый дом" за то, что дом был построен качественно
+                                    и в срок. Цены на сайте соответствуют действительности.
+                                    Отдельное спасибо менеджерам и бригаде.</p>
+                                <a class="review-info__link" href=""> Читать отзыв</a>
+                            </div>
+
+                        </li>
+                        <li class="review-card flex">
+                            <div class="review-img">
+                                <div class="review-img__bg">
+                                    <!-- для опасити 1 при скачивании 0.2 -->
+                                    <svg class="img-cover" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                        viewBox="0 0 40 40" fill="none">
+                                        <g opacity="1">
+                                            <path
+                                                d="M16.1757 7.98833C15.6874 7.5 14.9024 7.5 13.3307 7.5H12.9141V5C12.9141 4.66848 12.7824 4.35054 12.5479 4.11612C12.3135 3.8817 11.9956 3.75 11.6641 3.75C11.3325 3.75 11.0146 3.8817 10.7802 4.11612C10.5458 4.35054 10.4141 4.66848 10.4141 5V7.5H9.9974C8.42573 7.5 7.64073 7.5 7.1524 7.98833C6.66406 8.47667 6.66406 9.26167 6.66406 10.8333V11.1733C7.00073 11.085 7.34073 11.0233 7.67406 10.9783C8.7474 10.8333 10.0724 10.8333 11.5141 10.8333H11.8124C13.2541 10.8333 14.5774 10.8333 15.6524 10.9783C15.9857 11.0217 16.3257 11.085 16.6624 11.1733V10.8333C16.6624 9.26167 16.6641 8.47667 16.1757 7.98833Z"
+                                                fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.33594 35.4167C3.00442 35.4167 2.68647 35.5484 2.45205 35.7828C2.21763 36.0172 2.08594 36.3351 2.08594 36.6667C2.08594 36.9982 2.21763 37.3161 2.45205 37.5506C2.68647 37.785 3.00442 37.9167 3.33594 37.9167H36.6693C37.0008 37.9167 37.3187 37.785 37.5532 37.5506C37.7876 37.3161 37.9193 36.9982 37.9193 36.6667C37.9193 36.3351 37.7876 36.0172 37.5532 35.7828C37.3187 35.5484 37.0008 35.4167 36.6693 35.4167H35.0026V12.9533C35.0026 10.72 35.0026 9.60167 34.4093 8.745C33.8159 7.88834 32.7693 7.495 30.6759 6.71167C26.5843 5.17667 24.5393 4.41 23.1043 5.40334C21.6693 6.4 21.6693 8.58334 21.6693 12.9533V17.5H21.8193C23.2609 17.5 24.5843 17.5 25.6593 17.645C26.8443 17.8033 28.0976 18.1783 29.1259 19.2083C30.1576 20.2383 30.5326 21.4917 30.6926 22.675C30.8359 23.7517 30.8359 25.075 30.8359 26.5183V35.4167H28.3359V26.6667C28.3359 23.5233 28.3359 21.9533 27.3593 20.9767C26.3826 20 24.8126 20 21.6693 20H18.3359C15.1926 20 13.6226 20 12.6459 20.9767C11.6693 21.9533 11.6693 23.5233 11.6693 26.6667V35.4167H9.16927V26.5167C9.16927 25.075 9.16927 23.7517 9.31427 22.6767C9.4726 21.4917 9.8476 20.2383 10.8776 19.21C11.9076 18.1783 13.1609 17.8033 14.3443 17.6433C15.4209 17.5 16.7443 17.5 18.1876 17.5H18.3076C18.2409 15.94 18.0326 14.9833 17.3593 14.31C16.3826 13.3333 14.8126 13.3333 11.6693 13.3333C8.52594 13.3333 6.95594 13.3333 5.97927 14.31C5.0026 15.2867 5.0026 16.8567 5.0026 20V35.4167H3.33594ZM15.4193 25C15.4193 24.6685 15.551 24.3505 15.7854 24.1161C16.0198 23.8817 16.3377 23.75 16.6693 23.75H23.3359C23.6675 23.75 23.9854 23.8817 24.2198 24.1161C24.4542 24.3505 24.5859 24.6685 24.5859 25C24.5859 25.3315 24.4542 25.6495 24.2198 25.8839C23.9854 26.1183 23.6675 26.25 23.3359 26.25H16.6693C16.3377 26.25 16.0198 26.1183 15.7854 25.8839C15.551 25.6495 15.4193 25.3315 15.4193 25ZM15.4193 30C15.4193 29.6685 15.551 29.3505 15.7854 29.1161C16.0198 28.8817 16.3377 28.75 16.6693 28.75H23.3359C23.6675 28.75 23.9854 28.8817 24.2198 29.1161C24.4542 29.3505 24.5859 29.6685 24.5859 30C24.5859 30.3315 24.4542 30.6495 24.2198 30.8839C23.9854 31.1183 23.6675 31.25 23.3359 31.25H16.6693C16.3377 31.25 16.0198 31.1183 15.7854 30.8839C15.551 30.6495 15.4193 30.3315 15.4193 30Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="review-info">
+                                <h2 class="review-info__title">Название компании</h2>
+                                <p class="review-info__descr"> Большое спасибо компании
+                                    "Белый дом" за то, что дом был построен качественно
+                                    и в срок. Цены на сайте соответствуют действительности.
+                                    Отдельное спасибо менеджерам и бригаде.</p>
+                                <a class="review-info__link" href=""> Читать отзыв</a>
+                            </div>
+                        </li>
+                        <li class="review-card flex">
+                            <div class="review-img">
+                                <div class="review-img__bg">
+                                    <!-- для опасити 1 при скачивании 0.2 -->
+                                    <svg class="img-cover" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                        viewBox="0 0 40 40" fill="none">
+                                        <g opacity="1">
+                                            <path
+                                                d="M16.1757 7.98833C15.6874 7.5 14.9024 7.5 13.3307 7.5H12.9141V5C12.9141 4.66848 12.7824 4.35054 12.5479 4.11612C12.3135 3.8817 11.9956 3.75 11.6641 3.75C11.3325 3.75 11.0146 3.8817 10.7802 4.11612C10.5458 4.35054 10.4141 4.66848 10.4141 5V7.5H9.9974C8.42573 7.5 7.64073 7.5 7.1524 7.98833C6.66406 8.47667 6.66406 9.26167 6.66406 10.8333V11.1733C7.00073 11.085 7.34073 11.0233 7.67406 10.9783C8.7474 10.8333 10.0724 10.8333 11.5141 10.8333H11.8124C13.2541 10.8333 14.5774 10.8333 15.6524 10.9783C15.9857 11.0217 16.3257 11.085 16.6624 11.1733V10.8333C16.6624 9.26167 16.6641 8.47667 16.1757 7.98833Z"
+                                                fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.33594 35.4167C3.00442 35.4167 2.68647 35.5484 2.45205 35.7828C2.21763 36.0172 2.08594 36.3351 2.08594 36.6667C2.08594 36.9982 2.21763 37.3161 2.45205 37.5506C2.68647 37.785 3.00442 37.9167 3.33594 37.9167H36.6693C37.0008 37.9167 37.3187 37.785 37.5532 37.5506C37.7876 37.3161 37.9193 36.9982 37.9193 36.6667C37.9193 36.3351 37.7876 36.0172 37.5532 35.7828C37.3187 35.5484 37.0008 35.4167 36.6693 35.4167H35.0026V12.9533C35.0026 10.72 35.0026 9.60167 34.4093 8.745C33.8159 7.88834 32.7693 7.495 30.6759 6.71167C26.5843 5.17667 24.5393 4.41 23.1043 5.40334C21.6693 6.4 21.6693 8.58334 21.6693 12.9533V17.5H21.8193C23.2609 17.5 24.5843 17.5 25.6593 17.645C26.8443 17.8033 28.0976 18.1783 29.1259 19.2083C30.1576 20.2383 30.5326 21.4917 30.6926 22.675C30.8359 23.7517 30.8359 25.075 30.8359 26.5183V35.4167H28.3359V26.6667C28.3359 23.5233 28.3359 21.9533 27.3593 20.9767C26.3826 20 24.8126 20 21.6693 20H18.3359C15.1926 20 13.6226 20 12.6459 20.9767C11.6693 21.9533 11.6693 23.5233 11.6693 26.6667V35.4167H9.16927V26.5167C9.16927 25.075 9.16927 23.7517 9.31427 22.6767C9.4726 21.4917 9.8476 20.2383 10.8776 19.21C11.9076 18.1783 13.1609 17.8033 14.3443 17.6433C15.4209 17.5 16.7443 17.5 18.1876 17.5H18.3076C18.2409 15.94 18.0326 14.9833 17.3593 14.31C16.3826 13.3333 14.8126 13.3333 11.6693 13.3333C8.52594 13.3333 6.95594 13.3333 5.97927 14.31C5.0026 15.2867 5.0026 16.8567 5.0026 20V35.4167H3.33594ZM15.4193 25C15.4193 24.6685 15.551 24.3505 15.7854 24.1161C16.0198 23.8817 16.3377 23.75 16.6693 23.75H23.3359C23.6675 23.75 23.9854 23.8817 24.2198 24.1161C24.4542 24.3505 24.5859 24.6685 24.5859 25C24.5859 25.3315 24.4542 25.6495 24.2198 25.8839C23.9854 26.1183 23.6675 26.25 23.3359 26.25H16.6693C16.3377 26.25 16.0198 26.1183 15.7854 25.8839C15.551 25.6495 15.4193 25.3315 15.4193 25ZM15.4193 30C15.4193 29.6685 15.551 29.3505 15.7854 29.1161C16.0198 28.8817 16.3377 28.75 16.6693 28.75H23.3359C23.6675 28.75 23.9854 28.8817 24.2198 29.1161C24.4542 29.3505 24.5859 29.6685 24.5859 30C24.5859 30.3315 24.4542 30.6495 24.2198 30.8839C23.9854 31.1183 23.6675 31.25 23.3359 31.25H16.6693C16.3377 31.25 16.0198 31.1183 15.7854 30.8839C15.551 30.6495 15.4193 30.3315 15.4193 30Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="review-info">
+                                <h2 class="review-info__title">Название компании</h2>
+                                <p class="review-info__descr"> Большое спасибо компании
+                                    "Белый дом" за то, что дом был построен качественно
+                                    и в срок. Цены на сайте соответствуют действительности.
+                                    Отдельное спасибо менеджерам и бригаде.</p>
+                                <a class="review-info__link" href=""> Читать отзыв</a>
+                            </div>
+                        </li>
+                        <li class="review-card flex">
+                            <div class="review-img">
+                                <div class="review-img__bg">
+                                    <!-- для опасити 1 при скачивании 0.2 -->
+                                    <svg class="img-cover" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                        viewBox="0 0 40 40" fill="none">
+                                        <g opacity="1">
+                                            <path
+                                                d="M16.1757 7.98833C15.6874 7.5 14.9024 7.5 13.3307 7.5H12.9141V5C12.9141 4.66848 12.7824 4.35054 12.5479 4.11612C12.3135 3.8817 11.9956 3.75 11.6641 3.75C11.3325 3.75 11.0146 3.8817 10.7802 4.11612C10.5458 4.35054 10.4141 4.66848 10.4141 5V7.5H9.9974C8.42573 7.5 7.64073 7.5 7.1524 7.98833C6.66406 8.47667 6.66406 9.26167 6.66406 10.8333V11.1733C7.00073 11.085 7.34073 11.0233 7.67406 10.9783C8.7474 10.8333 10.0724 10.8333 11.5141 10.8333H11.8124C13.2541 10.8333 14.5774 10.8333 15.6524 10.9783C15.9857 11.0217 16.3257 11.085 16.6624 11.1733V10.8333C16.6624 9.26167 16.6641 8.47667 16.1757 7.98833Z"
+                                                fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.33594 35.4167C3.00442 35.4167 2.68647 35.5484 2.45205 35.7828C2.21763 36.0172 2.08594 36.3351 2.08594 36.6667C2.08594 36.9982 2.21763 37.3161 2.45205 37.5506C2.68647 37.785 3.00442 37.9167 3.33594 37.9167H36.6693C37.0008 37.9167 37.3187 37.785 37.5532 37.5506C37.7876 37.3161 37.9193 36.9982 37.9193 36.6667C37.9193 36.3351 37.7876 36.0172 37.5532 35.7828C37.3187 35.5484 37.0008 35.4167 36.6693 35.4167H35.0026V12.9533C35.0026 10.72 35.0026 9.60167 34.4093 8.745C33.8159 7.88834 32.7693 7.495 30.6759 6.71167C26.5843 5.17667 24.5393 4.41 23.1043 5.40334C21.6693 6.4 21.6693 8.58334 21.6693 12.9533V17.5H21.8193C23.2609 17.5 24.5843 17.5 25.6593 17.645C26.8443 17.8033 28.0976 18.1783 29.1259 19.2083C30.1576 20.2383 30.5326 21.4917 30.6926 22.675C30.8359 23.7517 30.8359 25.075 30.8359 26.5183V35.4167H28.3359V26.6667C28.3359 23.5233 28.3359 21.9533 27.3593 20.9767C26.3826 20 24.8126 20 21.6693 20H18.3359C15.1926 20 13.6226 20 12.6459 20.9767C11.6693 21.9533 11.6693 23.5233 11.6693 26.6667V35.4167H9.16927V26.5167C9.16927 25.075 9.16927 23.7517 9.31427 22.6767C9.4726 21.4917 9.8476 20.2383 10.8776 19.21C11.9076 18.1783 13.1609 17.8033 14.3443 17.6433C15.4209 17.5 16.7443 17.5 18.1876 17.5H18.3076C18.2409 15.94 18.0326 14.9833 17.3593 14.31C16.3826 13.3333 14.8126 13.3333 11.6693 13.3333C8.52594 13.3333 6.95594 13.3333 5.97927 14.31C5.0026 15.2867 5.0026 16.8567 5.0026 20V35.4167H3.33594ZM15.4193 25C15.4193 24.6685 15.551 24.3505 15.7854 24.1161C16.0198 23.8817 16.3377 23.75 16.6693 23.75H23.3359C23.6675 23.75 23.9854 23.8817 24.2198 24.1161C24.4542 24.3505 24.5859 24.6685 24.5859 25C24.5859 25.3315 24.4542 25.6495 24.2198 25.8839C23.9854 26.1183 23.6675 26.25 23.3359 26.25H16.6693C16.3377 26.25 16.0198 26.1183 15.7854 25.8839C15.551 25.6495 15.4193 25.3315 15.4193 25ZM15.4193 30C15.4193 29.6685 15.551 29.3505 15.7854 29.1161C16.0198 28.8817 16.3377 28.75 16.6693 28.75H23.3359C23.6675 28.75 23.9854 28.8817 24.2198 29.1161C24.4542 29.3505 24.5859 29.6685 24.5859 30C24.5859 30.3315 24.4542 30.6495 24.2198 30.8839C23.9854 31.1183 23.6675 31.25 23.3359 31.25H16.6693C16.3377 31.25 16.0198 31.1183 15.7854 30.8839C15.551 30.6495 15.4193 30.3315 15.4193 30Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="review-info">
+                                <h2 class="review-info__title">Название компании</h2>
+                                <p class="review-info__descr"> Большое спасибо компании
+                                    "Белый дом" за то, что дом был построен качественно
+                                    и в срок. Цены на сайте соответствуют действительности.
+                                    Отдельное спасибо менеджерам и бригаде.</p>
+                                <a class="review-info__link" href=""> Читать отзыв</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="" class="review__btn btn-a"> <span>Смотреть все отзывы</span></a>
+                </div>
+            </div>
+
+        </section>
+        <section class="contact pb-130">
+            <div class="container">
+                <div class="contact-wrapper f-jcsb">
+                    <div class="contact-block">
+                        <h2 class="contact-block__title title">
+                            Контакты
+                        </h2>
+                        <div class="contact-block-descr">
+                            <p class="contact-block-descr__text">Мы на связи с 9.00 до 18.00 в рабочие дни.</p>
+                            <span class="contact-block-descr__comit"> Обращайтесь к нам любым удобным способом:</span>
                         </div>
-
-                        <div class="news-card f-dc">
-                            <img class="news-card__img img-contain" src="assets/img/intro/news2.png" alt="">
-                            <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
-                            <p class="news-card__data">11.02.2023</p>
+                        <form class="contact-block-form" action="">
+                            <div class="contact-block-form__name">
+                                <input type="text" placeholder="Имя" name="name" id="contact-block-form__name"
+                                    class="check" data-valid="notEmpty">
+                                <label class="error-message" data-error-for="contact-block-form__name"></label>
+                            </div>
+                            <div class="contact-block-form__number">
+                                <input type="text" placeholder="Телефон" name="phone" id="contact-block-form__phone"
+                                    class="check" data-valid="phone">
+                                <label class="error-message" data-error-for="contact-block-form__phone"></label>
+                            </div>
+                            <a href="" class="contact-block-form__btn btn" id="contact-block-form__btn">
+                                <span>перезвоните мне</span></a>
+                        </form>
+                        <div class="contact-block-message">
+                            <div class="contact-message-email">
+                                <div class="contact-message-email__img">
+                                    <img class="img-cover" src="assets/img/icon/email.svg" alt="email">
+                                </div>
+                                <div class="contact-message-email__info">
+                                    <a class="contact-message-email__info-link"
+                                        href="info@artdecor-spb.ru">info@artdecor-spb.ru</a>
+                                    <p class="contact-message-email__info-descr">
+                                        Есть вопросы? Пишите нам
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-message__telegram">
+                                <img class="img-cover" src="assets/img/icon/telegram.svg" alt="telegram">
+                            </div>
+                            <div class="contact-message__whatsapp">
+                                <img class="img-cover" src="assets/img/icon/whatsapp.svg" alt="whatsapp">
+                            </div>
                         </div>
-
-                        <div class="news-card f-dc">
-                            <img class="news-card__img img-contain" src="assets/img/intro/news3.png" alt="">
-                            <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
-                            <p class="news-card__data">11.02.2023</p>
-                        </div>
-
-                        <div class="news-card f-dc">
-                            <img class="news-card__img img-contain" src="assets/img/intro/news4.png" alt="">
-                            <p class="news-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
-                            <p class="news-card__data">11.02.2023</p>
-                        </div>
-
-
+                        <span class="contact-block__comment">
+                            У нас нет способа связи с помощью телефона, надеемся на понимание.
+                        </span>
+                    </div>
+                    <div class="contact-map-container">
+                        <div class="contact-map" id="map"></div>
                     </div>
                 </div>
             </div>
@@ -471,6 +704,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=92203d6d-93a7-4900-abdf-47b77f5544b4&lang=ru_RU">
+    </script>
     <!-- jQuery -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- jQuery -->
