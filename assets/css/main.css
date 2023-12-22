@@ -822,7 +822,7 @@ body {
   padding-bottom: 20px;
 }
 .contact-block-descr {
-  margin: 0 20px 40px 0;
+  margin-bottom: 40px;
 }
 .contact-block-descr__time {
   font-family: "Gilroy Semibold";
@@ -835,37 +835,43 @@ body {
 }
 .contact-block-form-bg::before {
   content: "";
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
   position: absolute;
-  left: 0;
-  top: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
   background: linear-gradient(96deg, #69E6EC 26.21%, #BC69FA 102.69%);
   border-radius: 600px;
   z-index: -2;
 }
 .contact-block-form-bg::after {
   content: "";
-  width: calc(100% - 6px);
-  height: calc(100% - 4px);
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  transform: translate(-50%, -50%);
   position: absolute;
-  left: 3px;
-  top: 2px;
+  left: 50%;
+  top: 50%;
   background: #151B43;
   border-radius: 600px;
   z-index: -1;
 }
 .contact-block-form-bg input {
-  z-index: 2;
+  border: 3px solid #444969;
+  transition: all 0.3s ease;
 }
-.contact-message {
-  width: 410px;
-  margin-bottom: 30px;
+.contact-block-form-bg input:focus {
+  border: 3px solid transparent;
 }
-.contact__comment {
+.contact-block__comment {
   display: block;
   width: 410px;
   font-size: 18px;
+}
+.contact-block-message {
+  margin-bottom: 30px;
+  width: 410px;
 }
 .contact-message-app__telegram, .contact-message-app__whatsapp {
   width: 48px;
@@ -902,7 +908,7 @@ body {
 
 #map {
   width: 590px;
-  height: 550px;
+  height: auto;
   border-radius: 20px;
   overflow: hidden;
 }
