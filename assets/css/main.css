@@ -322,12 +322,30 @@ textarea {
   -webkit-text-fill-color: transparent;
 }
 
+.input {
+  border-radius: 600px;
+  border: 1px solid #3497E3;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  padding: 17px 30px;
+  margin-bottom: 20px;
+}
+
 .btn {
   position: relative;
   transition: all 0.3s ease;
   border-radius: 60px;
-  padding: 15px 30px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 225px;
+  padding: 17px 40px;
+  background: linear-gradient(96deg, #69E6EC 26.21%, #BC69FA 102.69%);
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.btn span {
+  font-size: 12px;
+  font-family: "Gilroy Semibold";
 }
 
 .btn-a {
@@ -381,7 +399,7 @@ blockquote {
   font-family: "Gilroy Regular";
   font-size: 16px;
   font-style: normal;
-  line-height: normal;
+  line-height: 140%;
 }
 
 h1,
@@ -395,13 +413,13 @@ h5 {
 
 input::-moz-placeholder, textarea::-moz-placeholder {
   color: #FFFFFF;
-  text-transform: uppercase;
+  opacity: 0.4;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: #FFFFFF;
-  text-transform: uppercase;
+  opacity: 0.4;
 }
 
 input {
@@ -501,8 +519,9 @@ body {
   padding-bottom: 50px;
 }
 .intro-info__btn {
-  display: block;
+  text-align: start;
   width: 170px;
+  margin: 0;
 }
 .intro-info__btn span {
   color: #FFF;
@@ -558,20 +577,28 @@ body {
   padding: 30px;
   border: 1px solid rgba(255, 255, 255, 0);
   border-top: none;
-  overflow: visible;
+  overflow: hidden;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
 }
 .how-slider-item:not(:last-child) {
   margin-right: 20px;
 }
 .how-slider-item__num {
+  width: 46px;
+  height: 46px;
+  border-radius: 20px 0 20px 0;
+  background: linear-gradient(96deg, rgba(105, 230, 236, 0.1) 26.21%, rgba(188, 105, 250, 0.1) 102.69%);
+  color: #69E6EC;
+  font-family: "Gilroy Medium";
+  font-size: 20px;
   position: absolute;
   top: 0;
   left: 0;
 }
 .how-slider-item__image {
   width: 87px;
-  min-height: 124px;
+  height: 124px;
+  padding-bottom: 20px;
 }
 
 .objects-card {
@@ -596,21 +623,22 @@ body {
 .objects-card-info {
   width: 700px;
 }
-.objects-card-info h3 {
+.objects-card-info__title {
   margin: 20px 0;
   font-family: "Gilroy Medium";
   font-size: 24px;
   font-style: normal;
   line-height: 100%;
 }
-.objects-card-info p {
+.objects-card-info__descr {
   margin-bottom: 40px;
+  line-height: normal;
 }
 .objects-card-info-img li:not(:nth-child(9n+9)) {
   margin-right: 20px;
 }
 .objects-card-info-img li:not(:nth-child(-n+9)) {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .objects-card-info-img__small-photo {
   width: 60px;
@@ -636,12 +664,26 @@ body {
 }
 .news-card {
   width: 285px;
+  position: relative;
 }
 .news-card:not(:nth-child(4n+4)) {
   margin-right: 20px;
 }
 .news-card:not(:nth-child(-n+4)) {
   margin-top: 60px;
+}
+.news-card::before {
+  content: " ";
+  position: absolute;
+  transform: translateY(0, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  background: radial-gradient(50% 50% at 50% 50%, #3497E3 0%, rgba(52, 151, 227, 0) 100%);
+  z-index: -1;
+  opacity: 1;
+  transition: all 0.3s ease;
 }
 .news-card__img {
   width: 285px;
@@ -650,16 +692,27 @@ body {
   border-radius: 20px;
   overflow: hidden;
 }
+.news-card__img img {
+  filter: grayscale(1);
+  border-radius: 20px;
+}
+.news-card:hover::before {
+  opacity: 1;
+  transform: scale(1.4);
+}
+.news-card:hover .news-card__img img {
+  filter: grayscale(0);
+}
 .news-card__descr {
   margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
 }
 .news-card__data {
   opacity: 0.5;
   font-size: 12px;
-}
-.news-card:hover {
-  border-radius: 20px;
-  background: radial-gradient(#3497E3 0%, rgba(52, 151, 227, 0) 100%);
 }
 
 .review-block {
@@ -684,8 +737,6 @@ body {
 }
 .review-img {
   margin-right: 32px;
-}
-.review-img__bg {
   position: relative;
   width: 90px;
   height: 90px;
@@ -694,7 +745,7 @@ body {
   opacity: 0.1;
   background: rgba(255, 255, 255, 0.3);
 }
-.review-img__bg img {
+.review-img img {
   opacity: 1;
 }
 .review-info {
@@ -707,6 +758,10 @@ body {
 }
 .review-info__descr {
   margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
 }
 .review-info__link {
   position: relative;
@@ -715,22 +770,91 @@ body {
   border-bottom: 1px solid #69E6EC;
 }
 
-.contact-message__whatsapp,
-.contact-message__telegram,
-.contact-message-email__img {
+.contact-block__title {
+  text-align: start;
+  padding-bottom: 20px;
+}
+.contact-block-descr {
+  margin: 0 20px 40px 0;
+}
+.contact-block-descr__time {
+  font-family: "Gilroy Semibold";
+}
+.contact-block-message {
+  width: 410px;
+  margin-bottom: 30px;
+}
+.contact-block__comment {
+  display: block;
+  width: 410px;
+  font-size: 18px;
+}
+.contact-message-email__img, .contact-message-app__telegram, .contact-message-app__whatsapp {
   width: 48px;
   height: 48px;
+  padding: 12px;
+  border-radius: 40px;
+}
+.contact-message-email__info {
+  width: 197px;
+}
+.contact-message-email__info-link {
+  font-size: 20px;
+  font-family: "Gilroy Semibold";
+}
+.contact-message-email__info-descr {
+  font-size: 14px;
+}
+.contact-message-email__img {
+  border: 1px solid #69E6EC;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  margin-right: 12px;
+}
+.contact-message-app__telegram {
+  background: #3CA3F1;
+  margin-right: 10px;
+}
+.contact-message-app__whatsapp {
+  background: #1CC25F;
+}
+.contact-message-app {
+  width: 233px;
+  justify-content: flex-end;
 }
 
-.contact-map-container {
+#map {
   width: 590px;
-  height: 510px;
+  height: 550px;
   border-radius: 20px;
   overflow: hidden;
 }
 
-#map {
-  border-radius: 20px;
+.footer-top {
+  padding: 33px 0 33px 0;
+  position: relative;
+}
+.footer-top::after {
+  content: "";
+  display: block;
   width: 100%;
-  height: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer-top__nav ul li:not(:last-child) {
+  margin-right: 40px;
+}
+.footer-top__logo {
+  margin-right: 100px;
+  width: 52px;
+  height: 44px;
+}
+.footer-end {
+  padding: 30px 0;
+}
+.footer-end__comit, .footer-end__private {
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */

@@ -119,12 +119,32 @@
 
 }
 
+.input {
+    border-radius: 600px;
+    border: 1px solid #3497E3;
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    padding: 17px 30px;
+    margin-bottom: 20px;
+}
+
+
 .btn {
     position: relative;
     transition: $anim-default;
     border-radius: 60px;
-    padding: 15px 30px;
-    border: 1px solid rgba(255, 255, 255, 0.20);
+    width: 225px;
+    padding: 17px 40px;
+    background: linear-gradient(96deg, #69E6EC 26.21%, #BC69FA 102.69%);
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+
+    span {
+        font-size: 12px;
+        font-family: "Gilroy Semibold";
+    }
 
 
 }

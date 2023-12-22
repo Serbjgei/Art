@@ -46,19 +46,19 @@ galleryContainers.forEach(container => {
 
 // map
 ymaps.ready(function () {
-    let center = [43.120475152394356, 131.89532078836044]
+    let center = [60.028766, 30.266955]
   
     let map = new ymaps.Map("map", {
       center: center, // Координаты центра карты
-      zoom: 17, // Масштаб карты
-       controls: [] // Виджеты карты
+      zoom: 14, // Масштаб карты
+    //    controls: [] // Виджеты карты
     });
   
     map.behaviors.disable('scrollZoom');
   
     let placemark = new ymaps.Placemark(center, {}, {
       iconLayout: "default#image",
-      iconImageHref: "../img/map-marker.svg", // Путь к файлу логотипа
+      iconImageHref: "assets/img/icon/geo.svg", // Путь к файлу логотипа
       iconImageSize: [60, 60], // Размеры иконки
       iconImageOffset: [-30, -60] // Смещение иконки
     });
