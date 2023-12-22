@@ -101,14 +101,65 @@
         <section class="partners ">
             <div class="container">
                 <div class="partners-wrapper pb-130">
-                    <div></div>
-                    <h2>партнеры в разработке</h2>
+                    <div class="partners-block">
+                        <div class="partners-slider swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner1.svg" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner2.svg" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner3.svg" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner4.svg" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner5.svg" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner6.svg" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner1.svg" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner2.svg" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner3.svg" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner4.svg" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner5.svg" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img class="img-contain" src="assets/img/intro/partner6.svg" alt="">
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                        <div class="partners-panel f-jcsb">
+                            <button class="partners-panel__prev ">
+                                <img src="assets/img/icon/panel-prev.svg" alt="">
+                            </button>
+                            <button class="partners-panel__next">
+                                <img src="assets/img/icon/panel-next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <section class="mission pb-130">
+        <section class="mission ">
             <div class="container">
-                <div class="mission-wrapper f-jcsb-center">
+                <div class="mission-wrapper pb-130 f-jcsb-center">
                     <div class="mission-info">
 
                         <h2 class="mission-info__title title">
@@ -478,6 +529,8 @@
                 </div>
             </div>
 
+            
+
         </section>
         <section class="contact ">
             <div class="container">
@@ -492,13 +545,17 @@
                         </div>
                         <form class="contact-block-form" action="">
                             <div class="contact-block-form__name">
-                                <input type="text" placeholder="Имя" name="name" id="contact-block-form__name"
+                                <div  class="contact-block-form-bg">
+                                    <input type="text" placeholder="Имя" name="name" id="contact-block-form__name"
                                     class="check input">
+                                </div>
                                 <label class="error-message" data-error-for="contact-block-form__name"></label>
                             </div>
                             <div class="contact-block-form__number">
-                                <input type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ" name="phone"
+                                <div  class="contact-block-form-bg"> 
+                                    <input type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ" name="phone"
                                     id="contact-block-form__phone" class="check input" data-valid="phone">
+                                </div>
                                 <label class="error-message" data-error-for="contact-block-form__phone"></label>
                             </div>
                             <a href="" class="contact-block-form__btn btn" id="contact-block-form__btn">
@@ -531,7 +588,7 @@
                         </span>
                     </div>
 
-                    <div class="map" id="map"></div>
+                    <div class="map" id="map" data-latitude="60.028766" data-longitude="30.266955"></div>
 
                 </div>
             </div>
@@ -582,7 +639,6 @@
         </div>
     </footer>
 
-    </footer>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=92203d6d-93a7-4900-abdf-47b77f5544b4&lang=ru_RU">
     </script>
     <!-- jQuery -->

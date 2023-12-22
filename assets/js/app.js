@@ -1,3 +1,25 @@
+// swiper partners
+var swiper = new Swiper('.swiper', {
+    slidesPerView: 'auto',
+    direction: getDirection(),
+    navigation: {
+      nextEl: '.partners-panel__next',
+      prevEl: '.partners-panel__prev',
+    },
+    on: {
+      resize: function () {
+        swiper.changeDirection(getDirection());
+      },
+    },
+  });
+
+  function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+    return direction;
+  }
+// swiper news
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     freeMode: true,
@@ -46,7 +68,11 @@ galleryContainers.forEach(container => {
 
 // map
 ymaps.ready(function () {
-    let center = [60.028766, 30.266955]
+    let latitude = parseFloat(document.getElementById('map').getAttribute('data-latitude'));
+    let longitude = parseFloat(document.getElementById('map').getAttribute('data-longitude'));
+
+    let center = [latitude, longitude];
+    
   
     let map = new ymaps.Map("map", {
       center: center, // Координаты центра карты
