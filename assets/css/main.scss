@@ -110,8 +110,12 @@ body {
                 a {
                     color: #FFFFFF;
                     font-family: 'Gilroy Regular';
-
+                    transition: $anim-default;
                     line-height: 100%;
+
+                    &:hover {
+                        color: #69afec;
+                    }
                 }
             }
         }
@@ -181,26 +185,38 @@ body {
     }
 }
 
-.swiper {
-    &-slide {
-        width: 184px;
-        height: unset;
-        padding: 17px 42px 18px 42px;
-        border-radius: 10px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.05) 100%);
-        margin: 40px 20px 0 0;
 
-    }
-}
 
 .partners {
+    &-slider {
+        &-item {
+            width: 184px;
+            height: 74px;
+            padding: 17px 42px 18px 42px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.05) 100%);
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+        &-pagination {
+            display: none;
+        }
+    }
+
+    &-wrapper {
+        margin-top: 40px;
+    }
+
     &-block {
         position: relative;
     }
 
     &-panel {
         position: absolute;
-        top: 65%;
+        top: 50%;
         transform: translateY(-50%);
         left: -70px;
         width: calc(100% + 140px);
@@ -208,6 +224,8 @@ body {
         &__prev,
         &__next {
             transition: $anim-default;
+            display: flex;
+            align-items: center;
 
             &:hover {
                 transform: scale(0.9);
@@ -347,6 +365,7 @@ body {
 
 
             &-img {
+                cursor: pointer;
 
                 li {
                     &:not(:nth-child(9n+9)) {
@@ -454,6 +473,7 @@ body {
         }
 
 
+
         &__descr {
             margin-bottom: 20px;
             display: -webkit-box;
@@ -480,6 +500,7 @@ body {
 
     &-card {
         width: 590px;
+        height: 100%;
         padding: 40px;
         border-radius: 20px;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.05) 100%);
@@ -517,8 +538,6 @@ body {
 
     }
 
-
-
     &-info {
         width: 388px;
 
@@ -534,6 +553,8 @@ body {
             -webkit-box-orient: vertical;
             overflow: hidden;
             -webkit-line-clamp: 4;
+            transition: -webkit-line-clamp 0.3s ease;
+
         }
 
         &__link {
@@ -541,9 +562,22 @@ body {
             color: #69E6EC;
             font-size: 16px;
             border-bottom: 1px solid #69E6EC;
+            cursor: pointer;
+
         }
 
+        &__link:hover {
+            color: #4bb9bf;
+        }
     }
+
+    .expanded {
+        -webkit-line-clamp: initial;
+
+    }
+
+
+
 }
 
 .contact {
@@ -695,12 +729,7 @@ body {
 }
 
 
-// .contact-message__whatsapp,
-// .contact-message__telegram,
-// .contact-message-email__img {
-//     width: 48px;
-//     height: 48px;
-// }
+
 
 #map {
     width: 590px;
@@ -730,9 +759,24 @@ body {
         }
 
         &__nav {
-            & ul li:not(:last-child) {
-                margin-right: 40px;
+            & ul {
+                & li {
 
+
+                    &:not(:last-child) {
+                        margin-right: 40px;
+
+                    }
+
+                    a {
+                        transition: $anim-default;
+
+                        &:hover {
+                            color: #69afec;
+                        }
+                    }
+
+                }
             }
         }
 
@@ -757,4 +801,176 @@ body {
         }
     }
 
+}
+
+// 404--------------
+
+.error {
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        bottom: 80px;
+        left: 0;
+    }
+
+    &-wrapper {
+        padding-bottom: 200px;
+    }
+
+    &-info {
+        width: 640px;
+
+        &__title {
+            margin-bottom: 30px;
+            text-align: start;
+            font-family: "Gilroy Regular";
+        }
+
+        &__descr {
+            width: 364px;
+            color: #FFF;
+            font-family: 'Gilroy Regular';
+            font-size: 22px;
+            font-style: normal;
+
+            line-height: 140%;
+            padding-bottom: 50px;
+        }
+
+        &__btn {
+            text-align: start;
+            width: 209px;
+            padding: 18px 30px;
+            margin: 0;
+
+            span {
+                color: #FFF;
+                font-family: 'Gilroy Regular';
+                font-size: 14px;
+                font-style: normal;
+
+                line-height: 100%;
+                background: unset;
+            }
+        }
+    }
+}
+
+
+.news {
+    &-wrapper {
+        &__descr {
+
+            text-align: center;
+            font-family: "Gilroy Regular";
+            font-size: 22px;
+
+        }
+    }
+}
+
+// политика конфеденциальности
+.political-content {
+
+    h2 {
+        color: #FFF;
+        font-family: "Gilroy SemiBold";
+        font-size: 18px;
+        line-height: 160%;
+    }
+
+    p {
+        color: #FFF;
+        font-family: "Gilroy Regular";
+        font-size: 18px;
+        line-height: 160%;
+
+        span {
+            font-family: "Gilroy Regular";
+            color: #FFF;
+            font-size: 18px;
+            border-bottom: 1px solid#FFF;
+
+        }
+    }
+
+    a {
+        color: #FFF;
+        font-family: "Gilroy Regular";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        border-bottom: 1px solid#FFF;
+    }
+
+    b {
+        font-family: "Gilroy Bold";
+        font-size: 18px;
+        color: #FFF;
+    }
+
+    ul {
+        padding-left: 40px;
+
+        li {
+            position: relative;
+            color: #FFF;
+            font-family: "Gilroy Regular";
+            font-size: 18px;
+            line-height: 160%;
+            display: list-item;
+
+        }
+    }
+
+}
+
+// ----- news  single
+.newsSingle {
+    &-aside {
+        border-radius: 20px;
+        background: rgba(241, 246, 251, 0.05);
+        padding: 40px 30px;
+
+        &-descr {
+            padding-bottom: 30px;
+            opacity: 0.54;
+            font-size: 18px;
+            font-family: "Gilroy Medium";
+        }
+
+        &-item {
+            position: relative;
+            width: 327px;
+
+
+            &:not(:last-child) {
+                padding-bottom: 40px;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background: rgba(255, 255, 255, 0.2);
+                    position: absolute;
+                    bottom: 20px;
+                    left: 0;
+
+                }
+            }
+
+            &__link {
+                font-family: "Gilroy Medium";
+               
+            }
+        }
+    }
 }
