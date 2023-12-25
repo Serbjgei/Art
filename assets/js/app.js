@@ -1,32 +1,39 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+    const link = document.querySelector('.review-info__link');
+    const descr = document.querySelector('.review-info__descr');
+
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+        descr.classList.toggle('expanded');
+        link.classList.toggle('expanded');
+    });
+});
+
 // swiper partners
-var swiper = new Swiper('.swiper', {
+const swiperPartners = new Swiper('.partners-slider', {
     slidesPerView: 'auto',
-    direction: getDirection(),
+    freeMode: true,
+    grabCursor: true,
     navigation: {
-      nextEl: '.partners-panel__next',
-      prevEl: '.partners-panel__prev',
+        nextEl: '.partners-panel__next',
+        prevEl: '.partners-panel__prev',
     },
-    on: {
-      resize: function () {
-        swiper.changeDirection(getDirection());
-      },
+    pagination: {
+        el: '.partners-slider-pagination',
+        clickable: 'true',
     },
-  });
+});
 
-  function getDirection() {
-    var windowWidth = window.innerWidth;
-    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-    return direction;
-  }
 // swiper news
-var swiper = new Swiper(".mySwiper", {
+const swiperHow = new Swiper(".how-slider", {
     slidesPerView: "auto",
     freeMode: true,
     grabCursor: true,
-  });
+});
 
-  class PhotoGallery {
+//   боъекты
+class PhotoGallery {
     constructor(container, bigPhotoClass, smallPhotosClass) {
         this.container = container;
         this.bigPhoto = container.querySelector(`.${bigPhotoClass}`);
@@ -63,47 +70,44 @@ const galleryContainers = document.querySelectorAll('.objects-card');
 galleryContainers.forEach(container => {
     const gallery = new PhotoGallery(container, 'big-photo', 'objects-card-info-img__small-photo');
 });
-
-
-
 // map
 ymaps.ready(function () {
     let latitude = parseFloat(document.getElementById('map').getAttribute('data-latitude'));
     let longitude = parseFloat(document.getElementById('map').getAttribute('data-longitude'));
 
     let center = [latitude, longitude];
-    
-  
-    let map = new ymaps.Map("map", {
-      center: center, // Координаты центра карты
-      zoom: 14, // Масштаб карты
-    //    controls: [] // Виджеты карты
-    });
-  
-    map.behaviors.disable('scrollZoom');
-  
-    let placemark = new ymaps.Placemark(center, {}, {
-      iconLayout: "default#image",
-      iconImageHref: "assets/img/icon/geo.svg", // Путь к файлу логотипа
-      iconImageSize: [60, 60], // Размеры иконки
-      iconImageOffset: [-30, -60] // Смещение иконки
-    });
-  
-    map.geoObjects.add(placemark); // Добавляем метку на карту
-  });
 
- 
+
+    let map = new ymaps.Map("map", {
+        center: center, // Координаты центра карты
+        zoom: 14, // Масштаб карты
+        //    controls: [] // Виджеты карты
+    });
+
+    map.behaviors.disable('scrollZoom');
+
+    let placemark = new ymaps.Placemark(center, {}, {
+        iconLayout: "default#image",
+        iconImageHref: "assets/img/icon/geo.svg", // Путь к файлу логотипа
+        iconImageSize: [60, 60], // Размеры иконки
+        iconImageOffset: [-30, -60] // Смещение иконки
+    });
+
+    map.geoObjects.add(placemark); // Добавляем метку на карту
+});
+
+
 
 // jQuery function
-$(document).ready(function() {
+$(document).ready(function () {
 
     //headerBurger
     function headerBurger() {
-        $('.header-burger').click(function() {
+        $('.header-burger').click(function () {
             $('header').addClass('open');
             $('html').addClass('hidden');
         })
-        $('.header-close').click(function() {
+        $('.header-close').click(function () {
             $('.header').removeClass('open');
             $('html').removeClass('hidden');
         })
@@ -118,7 +122,7 @@ $(document).ready(function() {
     });
 
     function closeModal() {
-        $('.popup__close').click(function() {
+        $('.popup__close').click(function () {
             $('html').removeClass('hidden');
             $('.duty').removeClass('open');
         });
@@ -132,8 +136,8 @@ $(document).ready(function() {
     }
     closeModal();
 
-        // OpenModal  
-    function openModal() { 
+    // OpenModal  
+    function openModal() {
         $('.modal-contact').click(function (e) {
             e.preventDefault();
             $('.popup-contact').addClass('open');
@@ -141,12 +145,12 @@ $(document).ready(function() {
         });
     }
     openModal();
-    
+
     //табы для направлений
     function tabsAll() {
-        $('.tabs-btn').click(function() {
-            let id = $(this).attr('data-tab'), 
-            content = $(this).parent().parent().parent().find('.tabs-block[data-tab="'+ id +'"]');
+        $('.tabs-btn').click(function () {
+            let id = $(this).attr('data-tab'),
+                content = $(this).parent().parent().parent().find('.tabs-block[data-tab="' + id + '"]');
             $(this).parent().parent().find('.tabs-btn').removeClass('active');
             $(this).addClass('active');
             $(this).parent().parent().parent().find('.tabs-block').removeClass('show');
@@ -156,9 +160,9 @@ $(document).ready(function() {
     tabsAll();
 
     function galleryList() {
-        $('.galleryMain-block-two').each(function() {
-            $(this).find('.gallery-item').each(function() {
-                if($(this).find('.gallery-item-category-item').length == 0) {
+        $('.galleryMain-block-two').each(function () {
+            $(this).find('.gallery-item').each(function () {
+                if ($(this).find('.gallery-item-category-item').length == 0) {
                     $(this).css('display', 'none')
                 }
                 console.log($(this).find('.gallery-item-category-item'))
@@ -166,15 +170,15 @@ $(document).ready(function() {
         })
     }
     galleryList()
-    
+
     function scrollHeader() {
         let scrollBtn = $(".header");
         let previousScroll = 0,
-        navBarOrgOffset = $(".header").offset().top;
+            navBarOrgOffset = $(".header").offset().top;
 
-        if($(window).width() <= 992) {
+        if ($(window).width() <= 992) {
             $(".header-height").height($(".header").height() + $(".header").innerHeight() - $('.header').height());
-    
+
             $(window).scroll(function () {
                 if ($(window).scrollTop() > 100) {
                     scrollBtn.addClass("scroll");
@@ -183,13 +187,13 @@ $(document).ready(function() {
                 }
                 let currentScroll = $(this).scrollTop();
                 if (currentScroll > navBarOrgOffset) {
-                  if (currentScroll > previousScroll) {
-                      scrollBtn.addClass("scroll");
-                  } else {
-                      scrollBtn.removeClass("scroll");
-                  }
+                    if (currentScroll > previousScroll) {
+                        scrollBtn.addClass("scroll");
+                    } else {
+                        scrollBtn.removeClass("scroll");
+                    }
                 } else {
-                  scrollBtn.removeClass("scroll");
+                    scrollBtn.removeClass("scroll");
                 }
                 previousScroll = currentScroll;
             });
@@ -202,9 +206,9 @@ $(document).ready(function() {
 
     function adaptiveFunc() {
         function newsBanner() {
-            if($('.news-banner').length) {
-                if($(window).width() <= 1210) {
-                    if($('.news-item-banner').length) {
+            if ($('.news-banner').length) {
+                if ($(window).width() <= 1210) {
+                    if ($('.news-item-banner').length) {
                         $('.news-list').find('.news-item').last().append($('.news-banner'));
                     } else {
                         $('.news-list').append('<li class="news-item news-item-banner"></li>');
@@ -235,8 +239,8 @@ $(document).ready(function() {
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 $('.select').removeClass('active');
             }
-        }); 
-        $('.select-item').click(function() {
+        });
+        $('.select-item').click(function () {
             $(this).parent().parent().parent().find('.select-title p').text($(this).find('p').text());
             $(this).parent().parent().parent().find('.select-title input').val($(this).find('p').text());
             $(this).parent().parent().find('.select-item').removeClass('active');
@@ -245,7 +249,7 @@ $(document).ready(function() {
         });
     }
     selectCustom();
-    
+
     function formValidate() {
         $('#accreditation-form').validate({
             rules: {
@@ -324,12 +328,12 @@ $(document).ready(function() {
                     minlength: "Минимальное количество символов: 4"
                 }
             },
-            errorPlacement: function(error, element) {
-                error.appendTo( element.parent().parent().next(".subscribe-form__err") );
-                
+            errorPlacement: function (error, element) {
+                error.appendTo(element.parent().parent().next(".subscribe-form__err"));
+
             }
         });
     };
-    formValidate(); 
-    
+    formValidate();
+
 });
